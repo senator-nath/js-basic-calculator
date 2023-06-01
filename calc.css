@@ -1,0 +1,19 @@
+.calculator {
+    width: 300px;
+    height: 400px;
+    background-color: rgb(12, 12, 20);
+}
+
+.calculator td {
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  background-color: rgb(21, 21, 37) ;
+  
+}
+
+.display {
+  width: 250px;
+  padding: 5px;
+  text-align: right;
+}
