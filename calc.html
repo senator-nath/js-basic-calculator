@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <link rel="stylesheet" href="calc.css">
+  <title>Scientific Calculator using HTML</title>
+</head>
+ <div class="body">
+<body>
+  <table class="calculator" border="2">
+    <tr>
+      <td colspan="5"><input class="display" type="text" value=""></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="shift" onclick="ToDisplay('shift')"></td>
+        <td><input type="button" value="(" onclick="ToDisplay('(')"></td>
+        <td><input type="button" value=")" onclick="ToDisplay(')')"></td>
+        <td><input type="button" value="^" onclick="ToDisplay('^')"></td>
+        <td><input type="button" value="mode" onclick="ToDisplay('mode')"></td>
+      </tr>
+    <tr>
+        <td><input type="button" value="log" onclick="appendToDisplay('log')"></td>
+        <td><input type="button" value="sin" onclick="appendToDisplay('sin')"></td>
+        <td><input type="button" value="cos" onclick="appendToDisplay('cos')"></td>
+        <td><input type="button" value="tan" onclick="appendToDisplay('tan')"></td>
+        <td><input type="button" value="hyp" onclick="appendToDisplay('hyp')"></td>
+      </tr>
+    <tr>
+      <td><input type="button" value="7" onclick="ToDisplay('7')"></td>
+      <td><input type="button" value="8" onclick="ToDisplay('8')"></td>
+      <td><input type="button" value="9" onclick="ToDisplay('9')"></td>
+      <td><input type="button" value="DEL" onclick="deleteLastCharacter()"></td>
+      <td><input type="button" value="AC" onclick="clearDisplay()"></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="4" onclick="ToDisplay('4')"></td>
+      <td><input type="button" value="5" onclick="ToDisplay('5')"></td>
+      <td><input type="button" value="6" onclick="ToDisplay('6')"></td>
+      <td><input type="button" value="*" onclick="ToDisplay('*')"></td>
+      <td><input type="button" value="/" onclick="ToDisplay('/')"></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="1" onclick="ToDisplay('1')"></td>
+      <td><input type="button" value="2" onclick="ToDisplay('2')"></td>
+      <td><input type="button" value="3" onclick="ToDisplay('3')"></td>
+      <td><input type="button" value="+" onclick="ToDisplay('+')"></td>
+      <td><input type="button" value="-" onclick="ToDisplay('-')"></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="0" onclick="ToDisplay('0')"></td>
+      <td><input type="button" value="." onclick="ToDisplay('.')"></td>
+      <td><input type="button" value="Exp" onclick="ToDisplay('Exp')"></td>
+      <td><input type="button" value="Ans" onclick="evaluateExpression('Ans')"></td>
+      <td><input type="button" value="=" onclick="evaluateExpression('=')"></td>
+      
+    </tr>
+  </table>
+  <script src="calc.js"></script>
+</body>
+ </div>
+</html>
